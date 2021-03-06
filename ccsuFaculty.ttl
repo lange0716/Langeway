@@ -1,0 +1,75 @@
+@prefix univ: <http://www.cs.ccsu.edu/~neli/university.owl#> .
+@prefix vcard: <http://www.w3.org/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+
+_:bnode0 a univ:Professor ;
+		   vcard:title "Doctor" ;
+	       vcard:given-name "Fatemeh" ;
+	       vcard:family-name "Abdollahzadeh" ;
+	       vcard:email "Abdollah@ccsu.edu" ;
+	       vcard:tel "860-832-2714" ;
+		   univ:teaches "CS253" , 
+					    "CS481" , 
+						"CS501" ;
+		   dc:title "Foundations in Computer Science" ,
+					"Data and File Structures" ,
+					"Operating Systems Design"	;
+		   foaf:knows _:bnode1 , 
+				      _:bnode2 , 
+					  _:bnode3 .			
+
+		   
+_:bnode1 a univ:Professor ;
+	       vcard:title "Doctor" ;
+	       vcard:given-name "Bradley" ;
+	       vcard:family-name "Kjell" ;
+	       vcard:email "Kjell@ccsu.edu" ;
+	       vcard:tel "860-832-2717" ;
+	       univ:teaches "CS153" ;
+		   dc:title "Computer Science III" ;
+		   foaf:knows _:bnode0 , 
+					  _:bnode2 , 
+					  _:bnode3 .
+
+			 
+_:bnode2 a univ:Professor ;
+	       vcard:title "Doctor" ;
+	       vcard:given-name "Stanley" ;
+	       vcard:family-name "Kurkovsky" ;
+	       vcard:email "kurkovsky@ccsu.edu" ;
+	       vcard:tel "860-832-2720" ;
+	       univ:teaches "CS455" ,
+						"CS510" ;
+		   dc:title "Secure Software Development" ,
+			        "Fundamentals of Software Engineering" ;
+		   foaf:knows _:bnode0 , 
+					  _:bnode1 , 
+					  _:bnode3 .
+		  
+			   
+_:bnode3 a univ:Professor ;
+	       vcard:title "Doctor" ;
+	       vcard:given-name "Neli" ;
+	       vcard:family-name "Zlatareva" ;
+	       vcard:email "Zlatareva@ccsu.edu" ;
+	       vcard:tel "860-832-2723" ;
+	       univ:teaches "CS407" ;
+		   dc:title "Semantic Web" ;
+		   foaf:knows _:bnode0 , 
+					  _:bnode1 , 
+					  _:bnode2 .
+	
+
+	   
+			 	
+			   
+			 
+				  
+			 
+
+			  		
+					  
