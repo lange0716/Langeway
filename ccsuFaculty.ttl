@@ -1,0 +1,67 @@
+@prefix univ:  <http://www.cs.ccsu.edu/~neli/university.owl#> .
+@prefix vcard: <http://www.w3.org/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+
+###  http://www.cs.ccsu.edu/~neli/university.owl#Lecturer1
+univ:Lecturer1 a univ:Professor ;
+		   vcard:title "Doctor" ;
+	       vcard:given-name "Fatemeh" ;
+	       vcard:family-name "Abdollahzadeh" ;
+	       vcard:email "Abdollah@ccsu.edu" ;
+	       vcard:tel "860-832-2714" ;
+		   univ:teaches univ:CS253 , 
+					    univ:CS481 , 
+						univ:CS501 ;
+		   foaf:knows univ:Lecturer2 , 
+				      univ:Lecturer3 , 
+					  univ:Lecturer4 .			
+
+###  http://www.cs.ccsu.edu/~neli/university.owl#Lecturer2		   
+univ:Lecturer2 a univ:Professor ;
+	       vcard:title "Doctor" ;
+	       vcard:given-name "Bradley" ;
+	       vcard:family-name "Kjell" ;
+	       vcard:email "Kjell@ccsu.edu" ;
+	       vcard:tel "860-832-2717" ;
+	       univ:teaches univ:CS153 ;
+		   foaf:knows univ:Lecturer1 , 
+				      univ:Lecturer3 , 
+					  univ:Lecturer4 .
+
+###  http://www.cs.ccsu.edu/~neli/university.owl#Lecturer3			 
+univ:Lecturer3 a univ:Professor ;
+	       vcard:title "Doctor" ;
+	       vcard:given-name "Stanley" ;
+	       vcard:family-name "Kurkovsky" ;
+	       vcard:email "kurkovsky@ccsu.edu" ;
+	       vcard:tel "860-832-2720" ;
+	       univ:teaches univ:CS455 ,
+						univ:CS510 ;
+		   foaf:knows univ:Lecturer1 , 
+				      univ:Lecturer2 , 
+					  univ:Lecturer4 .
+		  
+###  http://www.cs.ccsu.edu/~neli/university.owl#Lecturer4			   
+univ:Lecturer4 a univ:Professor ;
+	       vcard:title "Doctor" ;
+	       vcard:given-name "Neli" ;
+	       vcard:family-name "Zlatareva" ;
+	       vcard:email "Zlatareva@ccsu.edu" ;
+	       vcard:tel "860-832-2723" ;
+	       univ:teaches univ:CS407 ;
+		   foaf:knows univ:Lecturer1 , 
+				      univ:Lecturer2 , 
+					  univ:Lecturer3 .
+	
+
+	   
+			 	
+			   
+			 
+				  
+			 
+
+			  		
+					  
