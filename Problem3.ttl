@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix :      <http://example.org/> .
+
+:FredGuiol a :Director ;
+			 rdfs:label "Fred Guiol" .
+
+:EliaKazan a :Director ;
+			 rdfs:label "Elia Kazan" .
+			 
+:GeorgeCukor a :Director ;
+			 rdfs:label "George Cukor" .
+			 
+:JohnFord a :Director ;
+			 rdfs:label "John Ford" .
+			 
+:NicholasRay a :Director ;
+			 rdfs:label "Nicholas Ray" .
+			 
+:Giant a :Movie ;
+		 :directedBy :FredGuiol ;
+		 :starring "Mercedes McCambridge" , "Carroll Baker" , "Elizabeth Taylor" , "Rock Hudson" , "James Dean";
+		 :year "1956" .
+		 
+:EastofEden a :Movie ;
+		 :directedBy :EliaKazan ;
+		 :starring "Jo Van Fleet" , "Julie Harris" , "James Dean";
+		 :year "1955" .
+		 
+:ItShouldHappenToYou a :Movie ;
+		 :directedBy :GeorgeCukor ;
+		 :starring "Judy Holliday" , "Jack Lemmon" , "Peter Lawford";
+		 :year "1954" .
+		 
+:TheSearchers a :Movie ;
+		 :directedBy :JohnFord ;
+		 :starring "John Wayne" , "Natalie Wood" ;
+		 :year "1956" .
+		 
+:RebelWithoutACause a :Movie ;
+		 :directedBy :NicholasRay ;
+		 :starring "James Dean" , "Natalie Wood" , "Ann Doran" ;
+		 :year "1955" .
