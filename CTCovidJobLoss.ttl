@@ -1,0 +1,169 @@
+@prefix ds: <https://data.ct.gov/resource/s5ip-r3vu/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ods: <http://open-data-standards.github.com/2012/01/open-data-standards#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterm: <http://purl.org/dc/terms/> .
+@prefix dsbase: <https://data.ct.gov/resource/> .
+@prefix socrata: <http://www.socrata.com/rdf/terms#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.socrata.com/rdf/terms#rowID
+socrata:rowID rdf:type owl:AnnotationProperty .
+
+
+###  https://data.ct.gov/resource/s5ip-r3vu/change_number_jobs_feb_to
+ds:change_number_jobs_feb_to rdf:type owl:AnnotationProperty .
+
+
+###  https://data.ct.gov/resource/s5ip-r3vu/percent_change_number_jobs
+ds:percent_change_number_jobs rdf:type owl:AnnotationProperty .
+
+
+###  https://data.ct.gov/resource/s5ip-r3vu/sector
+ds:sector rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://data.ct.gov/resource/s5ip-r3vu
+dsbase:s5ip-r3vu rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://data.ct.gov/resource/s5ip-r3vu/row-3xpd_fq2m-i9bk
+ds:row-3xpd_fq2m-i9bk rdf:type owl:NamedIndividual ,
+                               dsbase:s5ip-r3vu ;
+                      socrata:rowID "row-3xpd_fq2m-i9bk" ;
+                      ds:change_number_jobs_feb_to "-1" ;
+                      ds:percent_change_number_jobs "-1.6" ;
+                      ds:sector "Transport, Warehousing, & Utilities" .
+
+
+###  https://data.ct.gov/resource/s5ip-r3vu/row-adha_fs3i-yw74
+ds:row-adha_fs3i-yw74 rdf:type owl:NamedIndividual ,
+                               dsbase:s5ip-r3vu ;
+                      socrata:rowID "row-adha_fs3i-yw74" ;
+                      ds:change_number_jobs_feb_to "-11.3" ;
+                      ds:percent_change_number_jobs "-4.1" ;
+                      ds:sector "Health Services" .
+
+
+###  https://data.ct.gov/resource/s5ip-r3vu/row-angp.jz24_9fzi
+ds:row-angp.jz24_9fzi rdf:type owl:NamedIndividual ,
+                               dsbase:s5ip-r3vu ;
+                      socrata:rowID "row-angp.jz24_9fzi" ;
+                      ds:change_number_jobs_feb_to "-10.2" ;
+                      ds:percent_change_number_jobs "-5.9" ;
+                      ds:sector "Retail" .
+
+
+###  https://data.ct.gov/resource/s5ip-r3vu/row-atvu_5cup.g7x8
+ds:row-atvu_5cup.g7x8 rdf:type owl:NamedIndividual ,
+                               dsbase:s5ip-r3vu ;
+                      socrata:rowID "row-atvu_5cup.g7x8" ;
+                      ds:change_number_jobs_feb_to "-1.5" ;
+                      ds:percent_change_number_jobs "-4.8" ;
+                      ds:sector "Information" .
+
+
+###  https://data.ct.gov/resource/s5ip-r3vu/row-ck7p.s395-2h49
+ds:row-ck7p.s395-2h49 rdf:type owl:NamedIndividual ,
+                               dsbase:s5ip-r3vu ;
+                      socrata:rowID "row-ck7p.s395-2h49" ;
+                      ds:change_number_jobs_feb_to "-13.5" ;
+                      ds:percent_change_number_jobs "-5.7" ;
+                      ds:sector "Government" .
+
+
+###  https://data.ct.gov/resource/s5ip-r3vu/row-hxkb_evfk_ug8r
+ds:row-hxkb_evfk_ug8r rdf:type owl:NamedIndividual ,
+                               dsbase:s5ip-r3vu ;
+                      socrata:rowID "row-hxkb_evfk_ug8r" ;
+                      ds:change_number_jobs_feb_to "-1.7" ;
+                      ds:percent_change_number_jobs "-8.1" ;
+                      ds:sector "Real Estate" .
+
+
+###  https://data.ct.gov/resource/s5ip-r3vu/row-i6zr_38pn_ifee
+ds:row-i6zr_38pn_ifee rdf:type owl:NamedIndividual ,
+                               dsbase:s5ip-r3vu ;
+                      socrata:rowID "row-i6zr_38pn_ifee" ;
+                      ds:change_number_jobs_feb_to "-3.5" ;
+                      ds:percent_change_number_jobs "-5.7" ;
+                      ds:sector "Mining, Logging, & Construction" .
+
+
+###  https://data.ct.gov/resource/s5ip-r3vu/row-mhta.rtc9.6kax
+ds:row-mhta.rtc9.6kax rdf:type owl:NamedIndividual ,
+                               dsbase:s5ip-r3vu ;
+                      socrata:rowID "row-mhta.rtc9.6kax" ;
+                      ds:change_number_jobs_feb_to "-7.2" ;
+                      ds:percent_change_number_jobs "-10.4" ;
+                      ds:sector "Educational Services" .
+
+
+###  https://data.ct.gov/resource/s5ip-r3vu/row-se39.kjbk_gbik
+ds:row-se39.kjbk_gbik rdf:type owl:NamedIndividual ,
+                               dsbase:s5ip-r3vu ;
+                      socrata:rowID "row-se39.kjbk_gbik" ;
+                      ds:change_number_jobs_feb_to "-25.8" ;
+                      ds:percent_change_number_jobs "-16.3" ;
+                      ds:sector "Leisure & Hospitality" .
+
+
+###  https://data.ct.gov/resource/s5ip-r3vu/row-6vmj~tzxt-xmyg
+<https://data.ct.gov/resource/s5ip-r3vu/row-6vmj~tzxt-xmyg> rdf:type owl:NamedIndividual ,
+                                                                     dsbase:s5ip-r3vu ;
+                                                            socrata:rowID "row-6vmj~tzxt-xmyg" ;
+                                                            ds:change_number_jobs_feb_to "-99.3" ;
+                                                            ds:percent_change_number_jobs "-5.8" ;
+                                                            ds:sector "All Non-Farm" .
+
+
+###  https://data.ct.gov/resource/s5ip-r3vu/row-7u3p~ynev~mmqy
+<https://data.ct.gov/resource/s5ip-r3vu/row-7u3p~ynev~mmqy> rdf:type owl:NamedIndividual ,
+                                                                     dsbase:s5ip-r3vu ;
+                                                            socrata:rowID "row-7u3p~ynev~mmqy" ;
+                                                            ds:change_number_jobs_feb_to "-2.3" ;
+                                                            ds:percent_change_number_jobs "-2.3" ;
+                                                            ds:sector "Finance & Insurance" .
+
+
+###  https://data.ct.gov/resource/s5ip-r3vu/row-i6fe~axgy_txh6
+<https://data.ct.gov/resource/s5ip-r3vu/row-i6fe~axgy_txh6> rdf:type owl:NamedIndividual ,
+                                                                     dsbase:s5ip-r3vu ;
+                                                            socrata:rowID "row-i6fe~axgy_txh6" ;
+                                                            ds:change_number_jobs_feb_to "-6.2" ;
+                                                            ds:percent_change_number_jobs "-3.8" ;
+                                                            ds:sector "Manufacturing" .
+
+
+###  https://data.ct.gov/resource/s5ip-r3vu/row-x72r~d4mk-f6qe
+<https://data.ct.gov/resource/s5ip-r3vu/row-x72r~d4mk-f6qe> rdf:type owl:NamedIndividual ,
+                                                                     dsbase:s5ip-r3vu ;
+                                                            socrata:rowID "row-x72r~d4mk-f6qe" ;
+                                                            ds:change_number_jobs_feb_to "-8.3" ;
+                                                            ds:percent_change_number_jobs "-3.7" ;
+                                                            ds:sector "Professional & Business Services" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
